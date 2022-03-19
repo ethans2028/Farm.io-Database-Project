@@ -8,4 +8,5 @@ We wanted to make a database and web application that would:
  - Allow stores and farms in the database to easily make orders and manage them
  - Allow farms and stores to manage their information so that other users in the database can contact them easily
 
-The web application for the Farm.io database can be found below.
+The web application for the Farm.io database can be found below:
+http://css1.seattleu.edu/~iparikh/PDA6/home.html
