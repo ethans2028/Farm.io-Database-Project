@@ -1,0 +1,43 @@
+<!-- db.html
+     Use a form to collect a query against the Farmio database.
+     Call the PHP script, db.php to perform
+     the given query and display the results
+    -->
+<html>
+<head><title> Access to the Farmio Database</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<p>
+These are examples for user interface
+<br />
+
+<p> Provide a table name, key attribute and key value for deletion (farm, order, product, store, vehicle) </p>
+
+
+<!-- use prefix http://css1.seattleu.edu/~esue/pda6/ for accessing php files-->
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f1" action = "http://css1.seattleu.edu/~esue/pda6s/db7.php" method = "post">
+    Table1: <input type = "text" name = "table1" /> <br />
+    Key: <input type = "text" name = "pk" /> <br />
+    Value: <input type = "text" name = "val" /> <br />
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" />
+</form>    
+
+<br />
+<p> Select a color for boats </p>
+
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f2" action = "http://css1.seattleu.edu/~iparikh/dbtest/db7.php" method = "post">  
+    <input type = "checkbox" name = "color" value = "red"> Red <br />
+    <input type = "reset"  value = "Reset" /> 
+    <input type = "submit"  value = "Submit request" /> 
+</form>   
+
+<br />
+
+
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+/*Color scheme for all elements in document (can be overrided if needed*/
+
+/*for centering table result content, use this class
+  Effects: 
+    --makes results appear as a scrollable page within web page
+*/
+.centerContent {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  width: 80%;
+  background-color: white; 
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.main-title {
+  text-align: left;
+}
+
+#mainPage {
+  min-height: 90%;
+}
+
+form {
+  color: auto;
+}
+
+table {
+  color: darkgreen;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+
+h3 {
+  color: darkgreen;
+  margin: auto;
+}
+
+body {
+  background-color: forestgreen;
+}

@@ -1,0 +1,88 @@
+<!-- link: http://css1.seattleu.edu/~iparikh/PDA6/home.html -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Farmio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="logo.png"/>
+  </head>
+  <body>
+    <!--home block-->
+    <div style="display:inline; align-items: center; justify-content: center;">
+      <img src="logo.png" height="70px" width="auto" />
+    </div>
+
+    <div class="centerContent" id="main-page">
+      <!--1. 2. Get information on all stores -->
+      <br/> <br/>
+      <h3 class="main-title"> Form to get information on all stores in farm </h3>
+      <form name = "f1" action = "http://css1.seattleu.edu/~iparikh/PDA6/storeInfo.php" method = "post">  
+        <input type = "submit"  value = "Get information on all Stores" />
+      </form>    
+
+      <!-- 2. and 3. get information on current orders for a given store id-->
+      <br/> <br/>
+      <h3 class="main-title"> Get information for all store orders</h3>
+      <form name = "f2" action = "http://css1.seattleu.edu/~iparikh/PDA6/orderInfo.php" method = "post">  
+        Store ID:
+        <textarea rows="1" cols="50" name="sid"> </textarea>
+        <br/>
+        <input type = "submit"  value = "Submit" />
+      </form>
+
+      <!-- 5. create a new order for a store with a given id -->
+      <br/> <br/>
+      <h3 class="main-title"> Create an order for a store</h3>
+      <form name = "f2" action = "http://css1.seattleu.edu/~iparikh/PDA6/createOrder.php" method = "post">  
+        Store ID: 
+        <textarea rows="1" cols="50" name="sid"> </textarea>
+        <br/>
+        
+        Product ID:
+        <textarea rows="1" cols="50" name="pid"> </textarea>
+        <br/>
+
+        Quantity:
+        <textarea rows="1" cols="50" name="quantity"> </textarea>
+        <br/>
+
+        Delivery Date:
+        <input type="date" name="date" value="2018-07-22" min="2018-03-014" max="2025-12-31" />
+        <br/>
+        <input type = "submit"  value = "Submit" />
+      </form>
+
+      <!--7. Cancel an order -->
+      <br/> <br/>
+      <h3 class="main-title"> Cancel an order</h3>
+      <form name = "f2" action = "http://css1.seattleu.edu/~iparikh/PDA6/cancelOrder.php" method = "post">  
+        Order ID: 
+        <textarea rows="1" cols="50" name="oid"> </textarea>
+        <br/>
+        <input type = "submit"  value = "Submit" />
+      </form>
+
+      <!--6. Update the address of a Store-->
+      <br/> <br/>
+      <h3 class="main-title"> Update a store's address</h3>
+      <form name = "f2" action = "http://css1.seattleu.edu/~iparikh/PDA6/updateStoreAddress.php" method = "post">  
+        Store ID: 
+        <textarea rows="1" cols="50" name="sid"> </textarea>
+        <br/>
+
+        Address:
+        <textarea rows="1" cols="50" name="address"> </textarea>
+        <br/>
+        <input type = "submit"  value = "Submit" />
+      </form>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+  </body>
+</html>
